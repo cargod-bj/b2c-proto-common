@@ -1,4 +1,4 @@
-module github.com/cargod-bj/b2c-poto
+module github.com/cargod-bj/b2c-proto
 
 go 1.14
 
