@@ -5,7 +5,7 @@ package staff
 
 import (
 	fmt "fmt"
-	common "github.com/cargod-bj/b2c-ptoto/common"
+	common "github.com/cargod-bj/b2c-proto/common"
 	proto "github.com/golang/protobuf/proto"
 	math "math"
 )

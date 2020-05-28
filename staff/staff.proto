@@ -2,7 +2,7 @@ syntax = "proto3";
 package staff;
 
 import "common/common.proto";
-option go_package = "github.com/cargod-bj/b2c-ptoto/staff";
+option go_package = "github.com/cargod-bj/b2c-proto/staff";
 
 service Staff {
   rpc Login(Request) returns (common.Response) {}
