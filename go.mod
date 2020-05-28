@@ -1,4 +1,4 @@
-module github.com/Yuanwe/b2c-ptoto
+module github.com/cargod-bj/b2c-ptoto
 
 go 1.14
 
