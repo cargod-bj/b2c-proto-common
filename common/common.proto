@@ -8,3 +8,7 @@ message Response {
   google.protobuf.Any data = 3;
   string code = 2;
 }
+message Page{
+  uint32 pageNo = 1;
+  uint32 pageSize = 2;
+}
