@@ -12,3 +12,10 @@ message Page{
   uint32 pageNo = 1;
   uint32 pageSize = 2;
 }
+
+message PagedList{
+  uint32 pageNo = 1;
+  uint32 pageSize = 2;
+  uint32 total = 3;
+  repeated google.protobuf.Any list = 4;
+}
