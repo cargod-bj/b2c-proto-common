@@ -84,7 +84,7 @@ func decode(input, output interface{}) error {
 		Metadata:         nil,
 		Result:           output,
 		WeaklyTypedInput: true,
-		ErrorUnused:      true,
+		ErrorUnused:      false,
 	}
 
 	decoder, err := mapstructure.NewDecoder(config)
