@@ -35,7 +35,7 @@ func (x *Response) ParseData2Dto(out interface{}) bool {
 		x.Msg = resp.FAILED_DTO_DATA_NIL_MSG
 		return true
 	}
-	if err := mapstructure.Decode(data, out); err != nil {
+	if err := decode(data, out); err != nil {
 		x.Code = resp.FAILED_DTO_DECODE
 		x.Msg = resp.FAILED_DTO_DECODE_MSG
 		logger.Info("解析数据错误", x, err)
@@ -51,7 +51,7 @@ func (x *Response) ParseParams2Dto(in, out interface{}) bool {
 		x.Msg = resp.FAILED_DTO_DECODE_MSG
 		return true
 	}
-	if err := mapstructure.Decode(data, out); err != nil {
+	if err := decode(data, out); err != nil {
 		x.Code = resp.FAILED_DTO_DECODE
 		x.Msg = resp.FAILED_DTO_DECODE_MSG
 		logger.Info("解析数据错误", x, err)
@@ -77,4 +77,19 @@ func (x *Response) IsError() bool {
 func (x *Response) InitSuccess() {
 	x.Code = resp.SUCCESS
 	x.Msg = resp.SUCCESS_MSG
+}
+
+func decode(input, output interface{}) error {
+	config := &mapstructure.DecoderConfig{
+		Metadata:         nil,
+		Result:           output,
+		WeaklyTypedInput: true,
+	}
+
+	decoder, err := mapstructure.NewDecoder(config)
+	if err != nil {
+		return err
+	}
+
+	return decoder.Decode(input)
 }
