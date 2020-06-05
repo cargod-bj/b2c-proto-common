@@ -8,7 +8,3 @@ require (
 	github.com/mitchellh/mapstructure v1.1.2
 	google.golang.org/protobuf v1.23.0
 )
-
-replace (
-	github.com/cargod-bj/b2c-common => ../b2c-common
-)
