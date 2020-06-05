@@ -44,6 +44,7 @@ func (x *Response) ParseData2Dto(out interface{}) bool {
 		logger.Info("解析数据错误", x, err)
 		return true
 	}
+
 	return false
 }
 
