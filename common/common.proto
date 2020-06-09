@@ -19,3 +19,13 @@ message PagedList{
   uint32 total = 3;
   repeated google.protobuf.Any list = 4;
 }
+
+// 用于封装id的通用dto
+message IdDto {
+  uint64 id = 1;
+}
+
+// 用于封装ids的通用dto
+message IdsDto {
+  repeated uint64 id = 1;
+}
