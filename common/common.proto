@@ -23,9 +23,11 @@ message PagedList{
 // 用于封装id的通用dto
 message IdDto {
   uint64 id = 1;
+  string local = 2;
 }
 
 // 用于封装ids的通用dto
 message IdsDto {
   repeated uint64 id = 1;
+  string local = 2;
 }
