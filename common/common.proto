@@ -13,6 +13,12 @@ message Page{
   uint32 pageSize = 2;
 }
 
+message LocalPage{
+  uint32 pageNo = 1;
+  uint32 pageSize = 2;
+  string local = 3;
+}
+
 message PagedList{
   uint32 pageNo = 1;
   uint32 pageSize = 2;
@@ -23,11 +29,20 @@ message PagedList{
 // 用于封装id的通用dto
 message IdDto {
   uint64 id = 1;
+}
+
+message IdLocalDTO {
+  uint64 id = 1;
   string local = 2;
 }
 
 // 用于封装ids的通用dto
 message IdsDto {
+  repeated uint64 id = 1;
+}
+
+// 用于封装ids的通用dto
+message IdsLocalDto {
   repeated uint64 id = 1;
   string local = 2;
 }
