@@ -26,6 +26,12 @@ message PagedList{
   repeated google.protobuf.Any list = 4;
 }
 
+message EmptyDto{
+
+}
+message LocalDto{
+  string local = 1;
+}
 // 用于封装id的通用dto
 message IdDto {
   uint64 id = 1;
