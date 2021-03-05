@@ -1,6 +1,6 @@
 ﻿
 <div align=center>
-<h1>b2c-transaction-api</h1>
+<h1>b2c-proto-common</h1>
 </div>
 <div align=center>
 <img src="https://img.shields.io/badge/golang-1.14-blue"/>
