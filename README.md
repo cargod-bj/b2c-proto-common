@@ -8,10 +8,10 @@
 </div>
 
 # Project Guidelines
-- Framework：[protoc](https://github.com/protocolbuffers/protobuf/releases)
+- Framework：[protobuf](https://github.com/protocolbuffers/protobuf)
 ## 1. Getting started
 ### 1.1 根据操作系统下载对应版本protoc 安装文件
-- 下载地址：[protoc](https://github.com/protocolbuffers/protobuf/releases)
+- 下载地址：[Protocol Buffers](https://github.com/protocolbuffers/protobuf/releases)
 ### 1.2 阅读安装文件中的readme 按照各操作系统安装指南进行安装，例如linux mac：
 ```
 Protocol Buffers - Google's data interchange format
